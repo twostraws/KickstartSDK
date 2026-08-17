@@ -1,0 +1,28 @@
+cyclomatic_complexity:
+  ignores_case_statements: true
+
+file_length:
+  warning: 500
+  error: 500
+
+function_body_length:
+  warning: 100
+  error: 100
+
+identifier_name:
+  excluded:
+    - ad
+
+large_tuple:
+  warning: 3
+  error: 3
+
+type_body_length:
+  warning: 500
+  error: 500
+
+# Case-sensitive paths to include during linting. Directory paths supplied on the
+# command line will be ignored.
+included:
+    - Sources
+    - Tests

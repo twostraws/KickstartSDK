@@ -1,0 +1,12 @@
+/.build/
+# Keep SwiftPM's generated Xcode data ignored except for shared template macros.
+/.swiftpm/*
+!/.swiftpm/xcode/
+/.swiftpm/xcode/*
+!/.swiftpm/xcode/package.xcworkspace/
+/.swiftpm/xcode/package.xcworkspace/*
+!/.swiftpm/xcode/package.xcworkspace/xcshareddata/
+/.swiftpm/xcode/package.xcworkspace/xcshareddata/*
+!/.swiftpm/xcode/package.xcworkspace/xcshareddata/IDETemplateMacros.plist
+/.DS_Store
+**/.DS_Store

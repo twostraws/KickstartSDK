@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "scope": "exchange_and_sdk",
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/exchange/v1/preview",
+      "host": "api",
+      "resolve_session": false,
+      "same_origin": false
+    },
+    {
+      "method": "GET",
+      "path": "/exchange/v1/preview/click",
+      "host": "api",
+      "resolve_session": false,
+      "same_origin": false
+    },
+    {
+      "method": "POST",
+      "path": "/exchange/v1/sessions",
+      "host": "api",
+      "resolve_session": false,
+      "same_origin": false
+    },
+    {
+      "method": "POST",
+      "path": "/exchange/v1/serve",
+      "host": "api",
+      "resolve_session": false,
+      "same_origin": false
+    },
+    {
+      "method": "POST",
+      "path": "/exchange/v1/impressions",
+      "host": "api",
+      "resolve_session": false,
+      "same_origin": false
+    },
+    {
+      "method": "POST",
+      "path": "/exchange/v1/reports",
+      "host": "api",
+      "resolve_session": false,
+      "same_origin": false
+    },
+    {
+      "method": "GET",
+      "path": "/exchange/v1/clicks/{click_token}",
+      "host": "api",
+      "resolve_session": false,
+      "same_origin": false
+    }
+  ],
+  "operations": {
+    "preview": {
+      "path": "/exchange/v1/preview",
+      "success": {
+        "status": 200,
+        "schema": {
+          "serve_id": "string",
+          "ad": {
+            "name": "string",
+            "subtitle": "string|null",
+            "developer_name": "string",
+            "icon_url": "url",
+            "click_url": "url",
+            "store_url": "url"
+          }
+        }
+      }
+    },
+    "preview_click": {
+      "path": "/exchange/v1/preview/click",
+      "success": {
+        "status": 302,
+        "location": "https://apps.apple.com/app/id6758355178"
+      }
+    },
+    "session": {
+      "path": "/exchange/v1/sessions",
+      "request": {
+        "api_key": "ks_live_api_contract",
+        "bundle_id": "com.example.api-contract",
+        "platform": "ios",
+        "app_version": "1.2.3",
+        "build_version": "45",
+        "sdk_version": "contract-test",
+        "development": true
+      },
+      "success": {
+        "status": 200,
+        "schema": {
+          "session_token": "base64url43",
+          "counts_enabled": "boolean",
+          "counting_reason": "string|null"
+        }
+      }
+    },
+    "serve": {
+      "path": "/exchange/v1/serve",
+      "request": {
+        "storefront": "GBR"
+      },
+      "success": {
+        "status": 200,
+        "schema": {
+          "serve_id": "base64url43",
+          "impression_token": "base64url43",
+          "ad": {
+            "name": "string",
+            "subtitle": "string|null",
+            "developer_name": "string",
+            "icon_url": "url",
+            "click_url": "url",
+            "store_url": "url"
+          }
+        }
+      }
+    },
+    "impression": {
+      "path": "/exchange/v1/impressions",
+      "request": {
+        "impression_token": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      },
+      "success": {
+        "status": 204
+      }
+    },
+    "report": {
+      "path": "/exchange/v1/reports",
+      "request": {
+        "serve_id": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "reason": "other"
+      },
+      "success": {
+        "status": 204
+      }
+    },
+    "click": {
+      "path": "/exchange/v1/clicks/{click_token}",
+      "request": {
+        "click_token": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
+      },
+      "success": {
+        "status": 302,
+        "location": "https://apps.apple.com/app/id880000002"
+      }
+    }
+  },
+  "errors": {
+    "invalid_json": 400,
+    "invalid_json_shape": 400,
+    "unknown_field": 400,
+    "invalid_field": 400,
+    "invalid_session": 401,
+    "not_found": 404,
+    "method_not_allowed": 405,
+    "body_too_large": 413,
+    "unsupported_media_type": 415,
+    "internal_error": 500
+  }
+}
