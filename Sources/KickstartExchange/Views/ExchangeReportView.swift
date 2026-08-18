@@ -8,6 +8,7 @@
 import SwiftUI
 
 /// Presents the available reasons for reporting an advertisement.
+@available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
 struct ExchangeReportView: View {
     let close: @MainActor @Sendable () -> Void
 

@@ -35,6 +35,7 @@ struct ExchangeAPIClient: Sendable {
 
     private let appTransaction: @Sendable () async -> String?
 
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     init(
         apiKey: String,
         bundleIdentifier: String,

@@ -6,6 +6,7 @@
 //
 
 /// Shares advertisement acquisition and impression work across matching views.
+@available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
 @MainActor
 final class ExchangeAdRunStore {
     static let shared = ExchangeAdRunStore()

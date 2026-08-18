@@ -25,6 +25,7 @@ enum ExchangePlatform: String, Hashable, Sendable {
     case visionOS = "visionos"
 
     /// The platform this code is currently running on.
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     @MainActor
     static var current: ExchangePlatform {
         #if os(watchOS)

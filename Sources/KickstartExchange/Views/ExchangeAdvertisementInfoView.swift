@@ -17,6 +17,7 @@ import SwiftUI
 //
 
 /// Explains an advertisement and provides navigation for reporting it.
+@available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
 struct ExchangeAdvertisementInfoView: View {
     let presentation: ExchangeAdPresentation
     let isPreview: Bool

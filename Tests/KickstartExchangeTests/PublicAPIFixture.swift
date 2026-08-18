@@ -9,6 +9,7 @@ import KickstartExchange
 import SwiftUI
 
 /// Compiles representative uses of the SDK's public SwiftUI API.
+@available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
 @MainActor
 private struct PublicAPIFixture: View {
     var body: some View {
