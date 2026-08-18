@@ -8,6 +8,12 @@
             "state" : "translated",
             "value" : "About this ad"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關於此廣告"
+          }
         }
       }
     },
@@ -17,6 +23,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ad"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "廣告"
           }
         }
       }
@@ -28,6 +40,12 @@
             "state" : "new",
             "value" : "Advertisement: %1$@. %2$@"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "廣告：%1$@。%2$@"
+          }
         }
       }
     },
@@ -37,6 +55,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Advertiser"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "廣告主"
           }
         }
       }
@@ -48,6 +72,12 @@
             "state" : "translated",
             "value" : "App Store availability"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store供應狀況"
+          }
         }
       }
     },
@@ -57,6 +87,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Broken App Store link"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store連結失效"
           }
         }
       }
@@ -68,6 +104,12 @@
             "state" : "translated",
             "value" : "Check your connection and try again."
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請檢查網路連線後再試一次。"
+          }
         }
       }
     },
@@ -77,6 +119,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Choose Another Reason"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇其他原因"
           }
         }
       }
@@ -88,6 +136,12 @@
             "state" : "translated",
             "value" : "Choose the reason that best describes the problem."
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請選擇最符合問題情況的原因。"
+          }
         }
       }
     },
@@ -97,6 +151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Done"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完成"
           }
         }
       }
@@ -108,6 +168,12 @@
             "state" : "translated",
             "value" : "Get"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取得"
+          }
         }
       }
     },
@@ -117,6 +183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Get %@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取得%@"
           }
         }
       }
@@ -128,6 +200,12 @@
             "state" : "translated",
             "value" : "It's inappropriate"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "內容不當"
+          }
         }
       }
     },
@@ -137,6 +215,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "It's misleading"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "內容具有誤導性"
           }
         }
       }
@@ -148,6 +232,12 @@
             "state" : "translated",
             "value" : "Kickstart Exchange does not track you or your device."
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kickstart Exchange不會追蹤你或你的裝置。"
+          }
         }
       }
     },
@@ -157,6 +247,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No report was stored."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未儲存任何回報資料。"
           }
         }
       }
@@ -168,6 +264,12 @@
             "state" : "translated",
             "value" : "Opens the App Store"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開啟App Store"
+          }
         }
       }
     },
@@ -177,6 +279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Other"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "其他"
           }
         }
       }
@@ -188,6 +296,12 @@
             "state" : "translated",
             "value" : "Privacy"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隱私權"
+          }
         }
       }
     },
@@ -197,6 +311,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Report"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "回報問題"
           }
         }
       }
@@ -208,6 +328,12 @@
             "state" : "translated",
             "value" : "Report not sent"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法送出回報"
+          }
         }
       }
     },
@@ -217,6 +343,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Report sent"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "回報已送出"
           }
         }
       }
@@ -228,6 +360,12 @@
             "state" : "translated",
             "value" : "Report this advertisement"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "回報此廣告"
+          }
         }
       }
     },
@@ -237,6 +375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sending report…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在送出回報⋯⋯"
           }
         }
       }
@@ -248,6 +392,12 @@
             "state" : "translated",
             "value" : "Shows information about this advertisement"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顯示此廣告的相關資訊"
+          }
         }
       }
     },
@@ -257,6 +407,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Test advert"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "測試廣告"
           }
         }
       }
@@ -268,6 +424,12 @@
             "state" : "translated",
             "value" : "Test report complete"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "測試回報已完成"
+          }
         }
       }
     },
@@ -277,6 +439,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thank you. We'll review it."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "謝謝你。我們會審查這份回報。"
           }
         }
       }
@@ -288,6 +456,12 @@
             "state" : "translated",
             "value" : "The app you’re using"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你正在使用的App"
+          }
         }
       }
     },
@@ -297,6 +471,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "This ad is based on"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此廣告的顯示依據"
           }
         }
       }
@@ -308,6 +488,12 @@
             "state" : "translated",
             "value" : "This is a test advert, shown because the app is running from Xcode or the Simulator. It proves the Kickstart Exchange integration works, and no advertiser is charged for it. Real adverts appear once the app ships from the App Store."
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "這是測試廣告，因為此App正透過Xcode或模擬器執行而顯示。這表示Kickstart Exchange已成功整合，且不會向任何廣告主收費。正式廣告會在App透過App Store發佈後顯示。"
+          }
         }
       }
     },
@@ -318,6 +504,12 @@
             "state" : "translated",
             "value" : "Try Again"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再試一次"
+          }
         }
       }
     },
@@ -327,6 +519,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your device platform"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的裝置平台"
           }
         }
       }
