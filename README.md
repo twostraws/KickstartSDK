@@ -16,6 +16,8 @@ Kickstart Exchange was designed for maximum user privacy. It matches apps, not p
 
 The package requires Xcode 26, and supports iOS 18, iPadOS 18, macOS 15, tvOS 18, watchOS 11, and visionOS 2 or later. It has no dependencies and is licensed under the MIT License.
 
+You can still add the package to an app whose deployment target is lower — down to iOS 15, iPadOS 15, macOS 12, tvOS 15, watchOS 8, and visionOS 1. In that case, wrap `ExchangeBannerAdView` and its modifiers in `#available` so they are only used on the supported OS versions.
+
 
 ## Installation
 
@@ -49,6 +51,14 @@ You're welcome to disable Kickstart Exchange at any time, including if users buy
 
 ```swift
 if hasPremiumAccess == false {
+    ExchangeBannerAdView(apiKey: "ks_live_REPLACE_WITH_API_KEY")
+}
+```
+
+If the app’s minimum OS version is below the supported versions, gate the same call:
+
+```swift
+if #available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *) {
     ExchangeBannerAdView(apiKey: "ks_live_REPLACE_WITH_API_KEY")
 }
 ```

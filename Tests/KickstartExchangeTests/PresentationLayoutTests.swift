@@ -15,6 +15,7 @@ import Testing
 @Suite("Advertisement presentation layout")
 @MainActor
 struct PresentationLayoutTests {
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     @Test("The card adapts its height at narrow widths")
     func narrowCardAdaptsItsHeight() {
         let regularSize = cardSize(width: 320)
@@ -25,6 +26,7 @@ struct PresentationLayoutTests {
         #expect(narrowSize.height > regularSize.height)
     }
 
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     private func cardSize(width: Double) -> CGSize {
         let card = ExchangeAdvertisementCard(
             appName: "A Thirty Character App Name!",

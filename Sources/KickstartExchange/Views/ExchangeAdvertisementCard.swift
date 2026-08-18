@@ -8,6 +8,7 @@
 import SwiftUI
 
 /// Displays an advertised app's icon, copy, disclosure, and App Store action.
+@available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
 struct ExchangeAdvertisementCard: View {
     let appName: String
     let subtitle: String?

@@ -9,6 +9,7 @@ import Foundation
 import ImageIO
 
 /// Loads, presents, and records interactions for a single Exchange banner.
+@available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
 @MainActor
 @Observable
 final class ExchangeAdViewModel {

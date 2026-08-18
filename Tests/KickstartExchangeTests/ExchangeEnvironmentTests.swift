@@ -13,6 +13,7 @@ import Testing
 @MainActor
 @Suite("Build environment")
 struct ExchangeEnvironmentTests {
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     @Test("The view model defaults to the current build environment")
     func defaultDevelopmentWiring() async throws {
         let handler = MockRequestHandler([
