@@ -25,14 +25,47 @@ struct PresentationLayoutTests {
         #expect(narrowSize.height > regularSize.height)
     }
 
+    @Test("The large card reserves its minimum height")
+    func largeCardReservesMinimumHeight() {
+        let size = largeCardSize(width: 390)
+
+        #expect(size.width == 390)
+        #expect(size.height >= ExchangeAdLayoutMetrics.largeMinimumHeight)
+    }
+
+    @Test("The large card grows rather than clipping enlarged text")
+    func largeCardGrowsForLongCopy() {
+        let regularSize = largeCardSize(width: 390)
+        let narrowSize = largeCardSize(width: 200)
+
+        #expect(narrowSize.height >= regularSize.height)
+    }
+
+    private func largeCardSize(width: Double) -> CGSize {
+        let card = ExchangeLargeAdvertisementCard(
+            appName: "A Thirty Character App Name!",
+            subtitle: "A useful thirty-character line",
+            icon: Image(systemName: "app.fill"),
+            palette: .preview,
+            isStoreEnabled: true,
+            showsCloseAction: true,
+            openStore: {},
+            showInformation: {},
+            close: {}
+        )
+        .frame(width: width)
+
+        return NSHostingView(rootView: card).fittingSize
+    }
+
     private func cardSize(width: Double) -> CGSize {
         let card = ExchangeAdvertisementCard(
             appName: "A Thirty Character App Name!",
             subtitle: "A useful thirty-character line",
             icon: Image(systemName: "app.fill"),
             isStoreEnabled: true,
-            openStore: { },
-            showInformation: { }
+            openStore: {},
+            showInformation: {}
         )
         .frame(width: width)
 

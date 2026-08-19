@@ -1,5 +1,5 @@
 //
-// ExchangeBannerAdView.swift
+// ExchangeLargeAdView.swift
 // KickstartSDK
 // https://github.com/twostraws/KickstartSDK
 // See LICENSE for license information.
@@ -7,28 +7,24 @@
 
 import SwiftUI
 
-//
-// Note to reader: Kickstart Exchange shows a simple banner ad.
-// That's easy, right? That's what I thought too! Except you
-// need to factor in reporting ads. And making it look and work
-// well on all platforms. And making it open links correctly
-// on platforms without WebKit. And supporting accessibility
-// adjustments. And… and… and… yeah, it's a *lot*.
-//
-// Anyway, if you're reading this code and thinking this seems
-// over-engineered at least or more complex than you expected,
-// spare a thought for me going through every platform and
-// every device variant, trying Dynamic Type variations,
-// VoiceOver, Switch Control, dark/light mode, and more.
-//
-
-/// A fixed-format, privacy-preserving Kickstart Exchange banner advertisement.
-public struct ExchangeBannerAdView: View {
+/// A large, privacy-preserving Kickstart Exchange advertisement.
+///
+/// Place it inside scrolling content to run an advert between sections, or
+/// present it with ``SwiftUICore/View/exchangeAdSheet(isPresented:apiKey:)`` or
+/// ``SwiftUICore/View/exchangeAdFullScreenCover(isPresented:apiKey:)``, which
+/// add a close action for you.
+///
+/// Every advert in one app process run shows the same advertised app and shares
+/// a single impression, exactly like ``ExchangeBannerAdView``.
+public struct ExchangeLargeAdView: View {
     @Environment(\.openURL) private var openURL
     @Environment(\.scenePhase) private var scenePhase
+    @Environment(\.exchangeAdPlacement) private var placement
+    @Environment(\.dismiss) private var dismiss
     @State private var model: ExchangeAdViewModel
 
-    /// Creates an Exchange advertisement for the current application bundle.
+    /// Creates a large Exchange advertisement for the current application
+    /// bundle.
     ///
     /// Pass `"preview"` in a Debug build or the Simulator to load the
     /// server-provided sample advert without an Exchange account.
@@ -36,24 +32,29 @@ public struct ExchangeBannerAdView: View {
         _model = State(initialValue: ExchangeAdViewModel(apiKey: apiKey))
     }
 
-    /// Creates a deterministic Exchange advertisement for previews.
+    /// Creates a deterministic large Exchange advertisement for previews.
     ///
-    /// The preview uses only the supplied display data. Its buttons are inert,
-    /// and it performs no session, StoreKit, network, timer, or reporting work.
+    /// The preview uses only the supplied display data and a representative
+    /// artwork palette. Its buttons are inert, and it performs no session,
+    /// StoreKit, network, timer, or reporting work.
     public static func preview(
         appName: String,
         subtitle: String?,
         icon: Image
     ) -> some View {
-        ExchangeAdvertisementCard(
+        ExchangeLargeAdvertisementCard(
             appName: appName,
             subtitle: subtitle,
             icon: icon,
+            palette: .preview,
             isStoreEnabled: true,
+            showsCloseAction: false,
             openStore: {},
-            showInformation: {}
+            showInformation: {},
+            close: {}
         )
     }
+
     init(model: ExchangeAdViewModel) {
         _model = State(initialValue: model)
     }
@@ -61,7 +62,7 @@ public struct ExchangeBannerAdView: View {
     public var body: some View {
         VStack {
             if let presentation = model.visiblePresentation {
-                ExchangeAdvertisementCard(
+                ExchangeLargeAdvertisementCard(
                     appName: presentation.ad.name,
                     subtitle: presentation.ad.subtitle,
                     icon: Image(
@@ -69,7 +70,9 @@ public struct ExchangeBannerAdView: View {
                         scale: 1,
                         orientation: .up
                     ),
+                    palette: presentation.palette,
                     isStoreEnabled: model.isOpeningStore == false,
+                    showsCloseAction: placement == .presented,
                     openStore: {
                         Task { @MainActor in
                             if let storeURL = await model.recordClick() {
@@ -77,7 +80,8 @@ public struct ExchangeBannerAdView: View {
                             }
                         }
                     },
-                    showInformation: model.showInformation
+                    showInformation: model.showInformation,
+                    close: { dismiss() }
                 )
             }
         }
@@ -86,6 +90,12 @@ public struct ExchangeBannerAdView: View {
         }
         .onAppear {
             model.setSceneActive(scenePhase == .active)
+
+            // A presented advert has no scroll view to report for it, so
+            // appearing is the only visibility signal it will ever get.
+            if placement == .presented {
+                model.setPlacementVisible(true)
+            }
         }
         .onDisappear {
             model.deactivate()
@@ -94,10 +104,15 @@ public struct ExchangeBannerAdView: View {
             model.setSceneActive(newPhase == .active)
         }
         .onScrollVisibilityChange(threshold: 0.5) { isVisible in
+            guard placement == .inline else {
+                return
+            }
+
             model.setPlacementVisible(isVisible)
         }
         .sheet(
-            isPresented: $model.isShowingInformation, onDismiss: model.informationSheetDidDismiss
+            isPresented: $model.isShowingInformation,
+            onDismiss: model.informationSheetDidDismiss
         ) {
             if let presentation = model.informationPresentation {
                 ExchangeAdvertisementInfoView(
@@ -108,4 +123,25 @@ public struct ExchangeBannerAdView: View {
             }
         }
     }
+}
+
+#Preview("Inline") {
+    ScrollView {
+        VStack {
+            ForEach(0..<3, id: \.self) { index in
+                Text("\(index) item")
+            }
+
+            ExchangeLargeAdView(apiKey: "preview")
+
+            ForEach(3..<20, id: \.self) { index in
+                Text("\(index) item")
+            }
+        }
+        .padding()
+    }
+}
+
+#Preview("Presented") {
+    ExchangeLargeAdPresentation(apiKey: "preview")
 }

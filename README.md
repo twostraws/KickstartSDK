@@ -16,7 +16,6 @@ Kickstart Exchange was designed for maximum user privacy. It matches apps, not p
 
 The package requires Xcode 26, and supports iOS 18, iPadOS 18, macOS 15, tvOS 18, watchOS 11, and visionOS 2 or later. It has no dependencies and is licensed under the MIT License.
 
-
 ## Installation
 
 Add `https://github.com/twostraws/KickstartSDK` in Xcode, then link the `KickstartExchange` product to your app target.
@@ -55,7 +54,6 @@ if hasPremiumAccess == false {
 
 Real adverts are shown automatically when your app goes live. **Note:** Simulator doesn’t support previewing App Store links.
 
-
 ## Previewing and styling
 
 You can preview banner ads in Xcode like this:
@@ -88,8 +86,37 @@ ExchangeBannerAdView(apiKey: "ks_live_REPLACE_WITH_API_KEY")
 
 Like other SwiftUI modifiers these flow down through the environment, so applying them to a container styles every card inside it.
 
-**Important:** This SDK is released under the MIT License, so you are free to inspect, modify, and redistribute it, including as part of your own service. However, only unmodified versions of this SDK may connect to the official Kickstart Exchange service. Modified versions may be blocked, and apps using them may be removed from Kickstart Exchange.
+## Large adverts
 
+`ExchangeLargeAdView` shows the same advert as a large card: the ad disclosure in one corner, the app icon, name, and subtitle stacked in the middle, and the App Store action at the bottom. Its background is built from the advertised app's icon, sampled down to a small grid and used as a mesh gradient, so the card is themed to the artwork without ever showing a recognisable copy of it. Every sampled color is conditioned for the current color scheme before it is used, so the text on top stays legible whatever the icon looks like.
+
+Place it inside scrolling content to run an advert between sections, exactly like the banner:
+
+```swift
+List {
+    Section("Latest") {
+        // your content
+    }
+
+    Section {
+        ExchangeLargeAdView(apiKey: "ks_live_REPLACE_WITH_API_KEY")
+    }
+}
+```
+
+Or present it, which adds a close action so people can always leave:
+
+```swift
+.exchangeAdSheet(isPresented: $isShowingAd, apiKey: "ks_live_REPLACE_WITH_API_KEY")
+.exchangeAdFullScreenCover(isPresented: $isShowingAd, apiKey: "ks_live_REPLACE_WITH_API_KEY")
+```
+
+`exchangeAdFullScreenCover(isPresented:apiKey:)` falls back to a sheet on macOS, which has no full screen cover of its own. A presented advert fills its sheet or cover edge to edge, with the artwork running under the safe areas and the content inset clear of them, so it takes its shape from the presentation rather than drawing a card of its own – `exchangeAdCornerStyle(_:)` and `exchangeAdStroke(_:)` therefore apply only to inline adverts. The remaining styling modifiers apply to both.
+
+Unlike the banner, a large advert is not tappable as a whole – only its Get button opens the App Store, so a mistimed tap near the close button cannot send someone to the store by accident.
+
+
+**Important:** This SDK is released under the MIT License, so you are free to inspect, modify, and redistribute it, including as part of your own service. However, only unmodified versions of this SDK may connect to the official Kickstart Exchange service. Modified versions may be blocked, and apps using them may be removed from Kickstart Exchange.
 
 ## Testing your integration
 
@@ -97,6 +124,11 @@ Debug builds and the Simulator automatically ask Kickstart Exchange for a *test 
 
 If no card appears while testing, or if the SDK cannot record a test ad impression, check Xcode's debug console for errors explaining what failed and what to try next. For shipping builds, check the Integration card in the Exchange dashboard.
 
+## Example app
+
+`KickstartSDK.xcworkspace` contains the package alongside a small iOS example app in `Example/`. Open the workspace, choose the **KickstartExchangeExample** scheme, and run it in the Simulator to see each placement without an Exchange account – every screen uses the `preview` API key, so the adverts you see are test adverts that charge nobody.
+
+The example covers pinning a banner beneath your content, placing one between rows of a scrolling list so you can watch viewability tracking decide when the card has really been seen, and applying each styling modifier.
 
 ## Privacy and data flow
 
@@ -108,19 +140,17 @@ For details about information processed by Kickstart Exchange and how long it is
 
 The SDK sends app-level details including the API key, bundle identifier, platform, app and build versions, SDK version, App Store country, development mode when applicable, and the optional signed evidence described above. Platform and storefront are app-level compatibility and accounting data, not identifiers for a specific person or device – we just need to be sure we can recommend apps the user can actually install.
 
-During one app process run, every `ExchangeBannerAdView` for the same app integration reuses the first advert result and one shared impression-delivery sequence. **Moving between screens does not request replacement adverts or create additional impressions.**
+During one app process run, every `ExchangeBannerAdView` and `ExchangeLargeAdView` for the same app integration reuses the first advert result and one shared impression-delivery sequence. **Moving between screens does not request replacement adverts or create additional impressions.**
 
 When someone taps an advert, the SDK records the click then opens the direct `apps.apple.com` destination supplied with the advert.
 
 If the advertiser has added an App Store Connect provider token, that App Store destination also contains Apple's provider token and the `KickstartExchange` campaign token. Apple may show the advertiser privacy-protected campaign results such as product-page views, downloads, usage, sales, and subscriptions, but that's all handled by Apple through App Store Connect – Kickstart Exchange does not receive those App Store conversion details.
-
 
 ## App Store privacy disclosure
 
 The included privacy manifest declares **Usage Data: Product Interaction** and **Usage Data: Advertising Data** for Third-Party Advertising, Developer's Advertising or Marketing, Analytics, and App Functionality – please make sure these are both declared on App Store Connect, in addition to any other privacy settings for your app. Both data types are unlinked from identity and are not used for tracking.
 
 App developers remain responsible for disclosing everything collected by their app and every other integrated SDK. Please follow the [exact App Store Connect steps](https://exchange.kickstart.tools/guide#app-privacy), keep any additional disclosures your app requires, and provide your own complete privacy policy that mentions and links to Kickstart Exchange.
-
 
 ## Contributing
 
@@ -129,7 +159,6 @@ We welcome all contributions, whether that's fixing up existing code, adding com
 - You must comment your code thoroughly, using documentation comments or regular comments as applicable.
 - All code must be licensed under the MIT license so it can benefit the most people.
 - Please ensure SwiftLint runs cleanly with no violations.
-
 
 ## License
 

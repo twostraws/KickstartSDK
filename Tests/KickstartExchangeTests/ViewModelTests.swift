@@ -7,6 +7,7 @@
 
 import Foundation
 import Testing
+
 @testable import KickstartExchange
 
 /// Verifies advertisement loading, presentation, and interaction lifecycles.
@@ -18,11 +19,12 @@ struct ViewModelTests {
         let handler = MockRequestHandler([
             .success(TestFixtures.response(data: TestFixtures.previewResponse())),
             .success(TestFixtures.response(data: TestFixtures.validPNG)),
-            .success(TestFixtures.response(
-                data: Data(),
-                statusCode: 302,
-                headers: ["location": TestFixtures.previewStoreURL]
-            ))
+            .success(
+                TestFixtures.response(
+                    data: Data(),
+                    statusCode: 302,
+                    headers: ["location": TestFixtures.previewStoreURL]
+                )),
         ])
         let model = makeModel(
             apiKey: ExchangeAPIClient.previewAPIKey,
@@ -31,7 +33,7 @@ struct ViewModelTests {
 
         await model.load()
         model.setSceneActive(true)
-        model.setScrollVisible(true)
+        model.setPlacementVisible(true)
 
         let storeURL = try #require(await model.recordClick())
         #expect(storeURL.absoluteString == TestFixtures.previewStoreURL)
@@ -47,7 +49,7 @@ struct ViewModelTests {
         let handler = MockRequestHandler([
             .success(TestFixtures.response(data: TestFixtures.previewResponse())),
             .success(TestFixtures.response(data: TestFixtures.validPNG)),
-            .failure(URLError(.timedOut))
+            .failure(URLError(.timedOut)),
         ])
         let model = makeModel(
             apiKey: ExchangeAPIClient.previewAPIKey,
@@ -66,7 +68,7 @@ struct ViewModelTests {
         let handler = MockRequestHandler([
             .success(TestFixtures.response(data: TestFixtures.previewResponse())),
             .success(TestFixtures.response(data: TestFixtures.validPNG)),
-            .success(TestFixtures.response(data: Data(), statusCode: 204))
+            .success(TestFixtures.response(data: Data(), statusCode: 204)),
         ])
         let model = makeModel(
             apiKey: ExchangeAPIClient.previewAPIKey,
@@ -142,7 +144,7 @@ struct ViewModelTests {
         let handler = readyHandler(
             additional: [
                 .success(TestFixtures.completedClickResponse),
-                .success(TestFixtures.completedImpressionResponse)
+                .success(TestFixtures.completedImpressionResponse),
             ],
             suspendedRequestNumber: 4
         )
@@ -164,9 +166,10 @@ struct ViewModelTests {
         let storeURL = try #require(await clickTask.value)
         #expect(storeURL.absoluteString == TestFixtures.storeURL)
         #expect(model.isOpeningStore == false)
-        #expect(await AsyncTestWaiter.until {
-            await handler.requests().count == 5
-        })
+        #expect(
+            await AsyncTestWaiter.until {
+                await handler.requests().count == 5
+            })
     }
 
     @Test("Visibility must remain continuous for a full second")
@@ -178,16 +181,17 @@ struct ViewModelTests {
         await model.load()
 
         model.setSceneActive(true)
-        model.setScrollVisible(true)
+        model.setPlacementVisible(true)
         try? await Task.sleep(for: .milliseconds(600))
-        model.setScrollVisible(false)
+        model.setPlacementVisible(false)
         try? await Task.sleep(for: .milliseconds(600))
         #expect(await handler.requests().count == 3)
 
-        model.setScrollVisible(true)
-        #expect(await AsyncTestWaiter.until(timeout: .seconds(2)) {
-            await handler.requests().count == 4
-        })
+        model.setPlacementVisible(true)
+        #expect(
+            await AsyncTestWaiter.until(timeout: .seconds(2)) {
+                await handler.requests().count == 4
+            })
         let request = try #require(await handler.requests().last)
         let body = try JSONRequestBody.object(from: request)
         #expect(body["impression_token"] as? String == TestFixtures.impressionToken)
@@ -211,13 +215,14 @@ struct ViewModelTests {
         await secondModel.load()
 
         firstModel.setSceneActive(true)
-        firstModel.setScrollVisible(true)
+        firstModel.setPlacementVisible(true)
         secondModel.setSceneActive(true)
-        secondModel.setScrollVisible(true)
+        secondModel.setPlacementVisible(true)
 
-        #expect(await AsyncTestWaiter.until(timeout: .seconds(2)) {
-            await handler.requests().count == 4
-        })
+        #expect(
+            await AsyncTestWaiter.until(timeout: .seconds(2)) {
+                await handler.requests().count == 4
+            })
         try? await Task.sleep(for: .milliseconds(100))
         #expect(await handler.requests().count == 4)
     }
@@ -269,11 +274,12 @@ struct ViewModelTests {
         additional: [Result<MockRequestHandler.Response, URLError>] = [],
         suspendedRequestNumber: Int? = nil
     ) -> MockRequestHandler {
-        MockRequestHandler([
-            .success(TestFixtures.response(data: TestFixtures.sessionResponse())),
-            .success(TestFixtures.response(data: TestFixtures.creativeResponse())),
-            .success(TestFixtures.response(data: TestFixtures.validPNG))
-        ] + additional, suspendedRequestNumber: suspendedRequestNumber)
+        MockRequestHandler(
+            [
+                .success(TestFixtures.response(data: TestFixtures.sessionResponse())),
+                .success(TestFixtures.response(data: TestFixtures.creativeResponse())),
+                .success(TestFixtures.response(data: TestFixtures.validPNG)),
+            ] + additional, suspendedRequestNumber: suspendedRequestNumber)
     }
 
     private func makeModel(

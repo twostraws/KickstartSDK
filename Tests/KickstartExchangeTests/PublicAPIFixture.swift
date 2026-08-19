@@ -38,5 +38,37 @@ private struct PublicAPIFixture: View {
             subtitle: nil,
             icon: Image(systemName: "app.fill")
         )
+
+        ExchangeLargeAdView(apiKey: "example-api-key")
+
+        ExchangeLargeAdView(apiKey: "example-api-key")
+            .exchangeAdCornerStyle(.square)
+            .exchangeAdStroke(.orange)
+            .exchangeAdActionTextColor(.orange)
+            .exchangeAdDisclosureBackgroundColor(.purple)
+
+        ExchangeLargeAdView.preview(
+            appName: "Example App",
+            subtitle: "Example subtitle",
+            icon: Image(systemName: "app.fill")
+        )
+
+        ExchangeLargeAdView.preview(
+            appName: "Example App",
+            subtitle: nil,
+            icon: Image(systemName: "app.fill")
+        )
+
+        Color.clear
+            .exchangeAdSheet(
+                isPresented: .constant(false),
+                apiKey: "example-api-key"
+            )
+
+        Color.clear
+            .exchangeAdFullScreenCover(
+                isPresented: .constant(false),
+                apiKey: "example-api-key"
+            )
     }
 }
