@@ -26,3 +26,4 @@ type_body_length:
 included:
     - Sources
     - Tests
+    - Example
