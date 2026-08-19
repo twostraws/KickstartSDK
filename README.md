@@ -86,6 +86,36 @@ ExchangeBannerAdView(apiKey: "ks_live_REPLACE_WITH_API_KEY")
 
 Like other SwiftUI modifiers these flow down through the environment, so applying them to a container styles every card inside it.
 
+## Large adverts
+
+`ExchangeLargeAdView` shows the same advert as a large card: the ad disclosure in one corner, the app icon, name, and subtitle stacked in the middle, and the App Store action at the bottom. Its background is built from the advertised app's icon, sampled down to a small grid and used as a mesh gradient, so the card is themed to the artwork without ever showing a recognisable copy of it. Every sampled color is conditioned for the current color scheme before it is used, so the text on top stays legible whatever the icon looks like.
+
+Place it inside scrolling content to run an advert between sections, exactly like the banner:
+
+```swift
+List {
+    Section("Latest") {
+        // your content
+    }
+
+    Section {
+        ExchangeLargeAdView(apiKey: "ks_live_REPLACE_WITH_API_KEY")
+    }
+}
+```
+
+Or present it, which adds a close action so people can always leave:
+
+```swift
+.exchangeAdSheet(isPresented: $isShowingAd, apiKey: "ks_live_REPLACE_WITH_API_KEY")
+.exchangeAdFullScreenCover(isPresented: $isShowingAd, apiKey: "ks_live_REPLACE_WITH_API_KEY")
+```
+
+`exchangeAdFullScreenCover(isPresented:apiKey:)` falls back to a sheet on macOS, which has no full screen cover of its own. A presented advert fills its sheet or cover edge to edge, with the artwork running under the safe areas and the content inset clear of them, so it takes its shape from the presentation rather than drawing a card of its own – `exchangeAdCornerStyle(_:)` and `exchangeAdStroke(_:)` therefore apply only to inline adverts. The remaining styling modifiers apply to both.
+
+Unlike the banner, a large advert is not tappable as a whole – only its Get button opens the App Store, so a mistimed tap near the close button cannot send someone to the store by accident.
+
+
 **Important:** This SDK is released under the MIT License, so you are free to inspect, modify, and redistribute it, including as part of your own service. However, only unmodified versions of this SDK may connect to the official Kickstart Exchange service. Modified versions may be blocked, and apps using them may be removed from Kickstart Exchange.
 
 ## Testing your integration
@@ -110,7 +140,7 @@ For details about information processed by Kickstart Exchange and how long it is
 
 The SDK sends app-level details including the API key, bundle identifier, platform, app and build versions, SDK version, App Store country, development mode when applicable, and the optional signed evidence described above. Platform and storefront are app-level compatibility and accounting data, not identifiers for a specific person or device – we just need to be sure we can recommend apps the user can actually install.
 
-During one app process run, every `ExchangeBannerAdView` for the same app integration reuses the first advert result and one shared impression-delivery sequence. **Moving between screens does not request replacement adverts or create additional impressions.**
+During one app process run, every `ExchangeBannerAdView` and `ExchangeLargeAdView` for the same app integration reuses the first advert result and one shared impression-delivery sequence. **Moving between screens does not request replacement adverts or create additional impressions.**
 
 When someone taps an advert, the SDK records the click then opens the direct `apps.apple.com` destination supplied with the advert.
 

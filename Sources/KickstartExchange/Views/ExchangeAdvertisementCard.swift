@@ -18,9 +18,6 @@ struct ExchangeAdvertisementCard: View {
 
     @Environment(\.exchangeAdCornerStyle) private var cornerStyle
     @Environment(\.exchangeAdStrokeColor) private var strokeColor
-    @Environment(\.exchangeAdDisclosureBackgroundColor) private var disclosureBackgroundColor
-    @Environment(\.colorScheme) private var colorScheme
-    @FocusState private var isDisclosureFocused: Bool
 
     // Decorations scale gently, but stop before they crowd out enlarged text.
     @ScaledMetric(relativeTo: .body) private var scale = 1.0
@@ -63,51 +60,8 @@ struct ExchangeAdvertisementCard: View {
                     )
                 )
 
-                Button(action: showInformation) {
-                    Text("Ad", bundle: .module)
-                        .bold()
-                        .foregroundStyle(
-                            isDisclosureFocused
-                                ? focusedForegroundColor
-                                : .white
-                        )
-                        .font(.caption2)
-                        .padding(.vertical, 4)
-                        .padding(.horizontal, 8)
-                        .background(
-                            isDisclosureFocused
-                                ? AnyShapeStyle(focusedBackgroundColor)
-                                : AnyShapeStyle(disclosureBackgroundColor.gradient),
-                            in: .rect(cornerRadius: 5)
-                        )
-                }
-                .buttonBorderShape(.roundedRectangle(radius: 5))
-                .frame(
-                    minWidth: ExchangeAdLayoutMetrics.minimumDisclosureWidth,
-                    alignment: .topLeading
-                )
-                .padding(.top, 3)
-                #if !os(macOS) && !targetEnvironment(macCatalyst)
-                // On platforms without a mouse pointer we make the Ad
-                // button easier to tap.
-                .contentShape(.rect.inset(by: -20))
-                #endif
-                #if os(tvOS)
-                .buttonStyle(.exchangeAd)
-                .focused($isDisclosureFocused)
-                .focusEffectDisabled()
-                #endif
-                .accessibilityInputLabels([
-                    Text("Ad", bundle: .module),
-                    Text("About this ad", bundle: .module)
-                ])
-                .accessibilityLabel(Text("About this ad", bundle: .module))
-                .accessibilityHint(
-                    Text(
-                        "Shows information about this advertisement",
-                        bundle: .module
-                    )
-                )
+                ExchangeAdDisclosureButton(action: showInformation)
+                    .padding(.top, 3)
             }
             .frame(
                 minWidth: ExchangeAdLayoutMetrics.minimumHorizontalTextWidth,
@@ -185,13 +139,5 @@ struct ExchangeAdvertisementCard: View {
 
     private var decorationScale: Double {
         ExchangeAdLayoutMetrics.decorationScale(for: scale)
-    }
-
-    private var focusedBackgroundColor: Color {
-        colorScheme == .dark ? .white : .black
-    }
-
-    private var focusedForegroundColor: Color {
-        colorScheme == .dark ? .black : .white
     }
 }
