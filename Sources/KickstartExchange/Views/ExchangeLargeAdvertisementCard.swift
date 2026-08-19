@@ -136,9 +136,9 @@ struct ExchangeLargeAdvertisementCard: View {
                 .scaledToFit()
                 .frame(width: iconLength, height: iconLength)
                 #if os(visionOS) || os(watchOS)
-                .clipShape(.circle)
+            .clipShape(.circle)
                 #else
-                .clipShape(.rect(cornerRadius: iconLength * 0.2))
+            .clipShape(.rect(cornerRadius: iconLength * 0.2))
                 #endif
                 .shadow(color: .black.opacity(0.2), radius: 12, y: 6)
                 .allowsHitTesting(false)

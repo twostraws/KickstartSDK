@@ -53,7 +53,7 @@ struct ExchangeAdDisclosureButton: View {
         #endif
         .accessibilityInputLabels([
             Text("Ad", bundle: .module),
-            Text("About this ad", bundle: .module)
+            Text("About this ad", bundle: .module),
         ])
         .accessibilityLabel(Text("About this ad", bundle: .module))
         .accessibilityHint(

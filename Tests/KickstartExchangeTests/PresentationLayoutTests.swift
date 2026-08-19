@@ -49,9 +49,9 @@ struct PresentationLayoutTests {
             palette: .preview,
             isStoreEnabled: true,
             showsCloseAction: true,
-            openStore: { },
-            showInformation: { },
-            close: { }
+            openStore: {},
+            showInformation: {},
+            close: {}
         )
         .frame(width: width)
 
@@ -64,8 +64,8 @@ struct PresentationLayoutTests {
             subtitle: "A useful thirty-character line",
             icon: Image(systemName: "app.fill"),
             isStoreEnabled: true,
-            openStore: { },
-            showInformation: { }
+            openStore: {},
+            showInformation: {}
         )
         .frame(width: width)
 

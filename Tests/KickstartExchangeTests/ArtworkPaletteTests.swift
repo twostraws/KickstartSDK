@@ -8,6 +8,7 @@
 import CoreGraphics
 import SwiftUI
 import Testing
+
 @testable import KickstartExchange
 
 /// Verifies icon sampling and the contrast conditioning that keeps large
@@ -28,12 +29,13 @@ struct ArtworkPaletteTests {
         (0, 1, 0),
         (0, 0, 1),
         (1, 1, 0),
-        (0.1, 0.05, 0.2)
+        (0.1, 0.05, 0.2),
     ]
 
     @Test("Sampling an icon fills the whole mesh grid")
     func samplingFillsTheGrid() throws {
-        let palette = try #require(ExchangeAdArtworkPalette(icon: icon(red: 0.8, green: 0.2, blue: 0.2)))
+        let palette = try #require(
+            ExchangeAdArtworkPalette(icon: icon(red: 0.8, green: 0.2, blue: 0.2)))
         let expected = ExchangeAdArtworkPalette.dimension * ExchangeAdArtworkPalette.dimension
 
         #expect(palette.samples.count == expected)
@@ -101,13 +103,15 @@ struct ArtworkPaletteTests {
             let minimum = Double(components.min() ?? 0)
             let saturation = maximum == 0 ? 0 : (maximum - minimum) / maximum
 
-            #expect(saturation <= ExchangeAdArtworkPalette.darkConditioning.maximumSaturation + 0.01)
+            #expect(
+                saturation <= ExchangeAdArtworkPalette.darkConditioning.maximumSaturation + 0.01)
         }
     }
 
     @Test("A flat icon still gains depth from top to bottom")
     func flatIconGainsDepth() throws {
-        let palette = try #require(ExchangeAdArtworkPalette(icon: icon(red: 0.5, green: 0.5, blue: 0.5)))
+        let palette = try #require(
+            ExchangeAdArtworkPalette(icon: icon(red: 0.5, green: 0.5, blue: 0.5)))
         let colors = palette.meshColors(for: .dark)
         let dimension = ExchangeAdArtworkPalette.dimension
 
@@ -143,7 +147,8 @@ struct ArtworkPaletteTests {
         of background: Color.Resolved,
         against textLuminance: Double
     ) -> Double {
-        let backgroundLuminance = 0.2126 * Double(background.linearRed)
+        let backgroundLuminance =
+            0.2126 * Double(background.linearRed)
             + 0.7152 * Double(background.linearGreen)
             + 0.0722 * Double(background.linearBlue)
 
