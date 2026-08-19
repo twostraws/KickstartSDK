@@ -16,7 +16,6 @@ Kickstart Exchange was designed for maximum user privacy. It matches apps, not p
 
 The package requires Xcode 26, and supports iOS 18, iPadOS 18, macOS 15, tvOS 18, watchOS 11, and visionOS 2 or later. It has no dependencies and is licensed under the MIT License.
 
-
 ## Installation
 
 Add `https://github.com/twostraws/KickstartSDK` in Xcode, then link the `KickstartExchange` product to your app target.
@@ -55,7 +54,6 @@ if hasPremiumAccess == false {
 
 Real adverts are shown automatically when your app goes live. **Note:** Simulator doesn’t support previewing App Store links.
 
-
 ## Previewing and styling
 
 You can preview banner ads in Xcode like this:
@@ -90,13 +88,17 @@ Like other SwiftUI modifiers these flow down through the environment, so applyin
 
 **Important:** This SDK is released under the MIT License, so you are free to inspect, modify, and redistribute it, including as part of your own service. However, only unmodified versions of this SDK may connect to the official Kickstart Exchange service. Modified versions may be blocked, and apps using them may be removed from Kickstart Exchange.
 
-
 ## Testing your integration
 
 Debug builds and the Simulator automatically ask Kickstart Exchange for a *test advert*: a real response from the live service, so seeing the card is proof your API key, bundle identifier, and network path all work. Test adverts charge nobody, earn nothing, and are never counted in analytics, and they work even before Kickstart Exchange begins serving.
 
 If no card appears while testing, or if the SDK cannot record a test ad impression, check Xcode's debug console for errors explaining what failed and what to try next. For shipping builds, check the Integration card in the Exchange dashboard.
 
+## Example app
+
+`KickstartSDK.xcworkspace` contains the package alongside a small iOS example app in `Example/`. Open the workspace, choose the **KickstartExchangeExample** scheme, and run it in the Simulator to see each placement without an Exchange account – every screen uses the `preview` API key, so the adverts you see are test adverts that charge nobody.
+
+The example covers pinning a banner beneath your content, placing one between rows of a scrolling list so you can watch viewability tracking decide when the card has really been seen, and applying each styling modifier.
 
 ## Privacy and data flow
 
@@ -114,13 +116,11 @@ When someone taps an advert, the SDK records the click then opens the direct `ap
 
 If the advertiser has added an App Store Connect provider token, that App Store destination also contains Apple's provider token and the `KickstartExchange` campaign token. Apple may show the advertiser privacy-protected campaign results such as product-page views, downloads, usage, sales, and subscriptions, but that's all handled by Apple through App Store Connect – Kickstart Exchange does not receive those App Store conversion details.
 
-
 ## App Store privacy disclosure
 
 The included privacy manifest declares **Usage Data: Product Interaction** and **Usage Data: Advertising Data** for Third-Party Advertising, Developer's Advertising or Marketing, Analytics, and App Functionality – please make sure these are both declared on App Store Connect, in addition to any other privacy settings for your app. Both data types are unlinked from identity and are not used for tracking.
 
 App developers remain responsible for disclosing everything collected by their app and every other integrated SDK. Please follow the [exact App Store Connect steps](https://exchange.kickstart.tools/guide#app-privacy), keep any additional disclosures your app requires, and provide your own complete privacy policy that mentions and links to Kickstart Exchange.
-
 
 ## Contributing
 
@@ -129,7 +129,6 @@ We welcome all contributions, whether that's fixing up existing code, adding com
 - You must comment your code thoroughly, using documentation comments or regular comments as applicable.
 - All code must be licensed under the MIT license so it can benefit the most people.
 - Please ensure SwiftLint runs cleanly with no violations.
-
 
 ## License
 
