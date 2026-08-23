@@ -17,6 +17,7 @@ private struct PublicAPIFixture: View {
         ExchangeBannerAdView(apiKey: "example-api-key")
             .exchangeAdCornerStyle(.rounded)
             .exchangeAdStroke(.orange)
+            .exchangeAdBackground(.white)
             .exchangeAdActionTextColor(.orange)
             .exchangeAdDisclosureBackgroundColor(.purple)
 
@@ -30,6 +31,7 @@ private struct PublicAPIFixture: View {
         )
         .exchangeAdCornerStyle(.rounded)
         .exchangeAdStroke(.clear)
+        .exchangeAdBackground(.gray)
         .exchangeAdActionTextColor(.green)
         .exchangeAdDisclosureBackgroundColor(.indigo)
 
