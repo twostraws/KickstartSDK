@@ -48,6 +48,25 @@ enum ExchangeAdLayoutMetrics {
     static let minimumDisclosureWidth = 44.0
     #endif
 
+    #if os(tvOS)
+    static let maximumLargeCardWidth = 900.0
+    static let largeMinimumHeight = 620.0
+    static let largeCardPadding = 40.0
+    static let largeAppIconLength = 160.0
+    #elseif os(watchOS)
+    // A watch screen is shorter than any sensible minimum, so the large
+    // layout scrolls there instead of reserving height it cannot have.
+    static let maximumLargeCardWidth = 360.0
+    static let largeMinimumHeight = 0.0
+    static let largeCardPadding = 12.0
+    static let largeAppIconLength = 64.0
+    #else
+    static let maximumLargeCardWidth = 450.0
+    static let largeMinimumHeight = 480.0
+    static let largeCardPadding = 24.0
+    static let largeAppIconLength = 128.0
+    #endif
+
     static func decorationScale(for scaledMetric: Double) -> Double {
         min(scaledMetric, maximumDecorationScale)
     }
