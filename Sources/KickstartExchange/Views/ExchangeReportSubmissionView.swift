@@ -8,6 +8,7 @@
 import SwiftUI
 
 /// Submits a selected report reason and displays the submission result.
+@available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
 struct ExchangeReportSubmissionView: View {
     let reason: ExchangeReportReason
     let isPreview: Bool

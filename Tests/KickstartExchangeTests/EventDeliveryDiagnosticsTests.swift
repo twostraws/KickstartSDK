@@ -13,6 +13,7 @@ import Testing
 @MainActor
 @Suite("Development impression diagnostics")
 struct EventDeliveryDiagnosticsTests {
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     @Test("A development impression failure reports once")
     func developmentFailureReports() async throws {
         let handler = readyHandler(impression: .failure(URLError(.timedOut)))
@@ -27,6 +28,7 @@ struct EventDeliveryDiagnosticsTests {
         #expect(recorder.messages == [Self.impressionDiagnostic])
     }
 
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     @Test("Shipping impression failures remain quiet")
     func shippingFailureStaysQuiet() async throws {
         let handler = readyHandler(
@@ -48,6 +50,7 @@ struct EventDeliveryDiagnosticsTests {
         #expect(recorder.messages.isEmpty)
     }
 
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     @Test("Canceled impression delivery remains quiet")
     func cancellationStaysQuiet() async throws {
         let handler = readyHandler(impression: .failure(URLError(.cancelled)))
@@ -81,6 +84,7 @@ struct EventDeliveryDiagnosticsTests {
         ])
     }
 
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     private func makeModel(
         handler: MockRequestHandler,
         recorder: DiagnosticRecorder,

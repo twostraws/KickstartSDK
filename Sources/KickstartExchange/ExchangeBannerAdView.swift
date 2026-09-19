@@ -23,6 +23,7 @@ import SwiftUI
 //
 
 /// A fixed-format, privacy-preserving Kickstart Exchange banner advertisement.
+@available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
 public struct ExchangeBannerAdView: View {
     @Environment(\.openURL) private var openURL
     @Environment(\.scenePhase) private var scenePhase

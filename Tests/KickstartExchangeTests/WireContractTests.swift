@@ -12,6 +12,7 @@ import Testing
 /// Verifies the SDK remains compatible with the shared Exchange API contract.
 @Suite("Exchange wire contract")
 struct WireContractTests {
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     @Test("SDK endpoints and response fields match the shared contract")
     func sharedContract() throws {
         let fixtureURL = try #require(Bundle.module.url(

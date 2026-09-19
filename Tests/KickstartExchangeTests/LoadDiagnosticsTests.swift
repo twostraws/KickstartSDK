@@ -13,6 +13,7 @@ import Testing
 @MainActor
 @Suite("Development load diagnostics")
 struct LoadDiagnosticsTests {
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     @Test("A missing bundle identifier produces one actionable diagnostic")
     func missingBundleIdentifier() async {
         let handler = MockRequestHandler()
@@ -39,6 +40,7 @@ struct LoadDiagnosticsTests {
         #expect(await handler.requests().isEmpty)
     }
 
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     @Test("A session rejection keeps its actionable reason")
     func sessionRejection() async {
         let rejected = TestFixtures.response(
@@ -61,6 +63,7 @@ struct LoadDiagnosticsTests {
         ])
     }
 
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     @Test("An unexpected serve response produces one service diagnostic")
     func unexpectedServeResponse() async {
         let handler = MockRequestHandler([
@@ -82,6 +85,7 @@ struct LoadDiagnosticsTests {
         #expect(await handler.requests().count == 2)
     }
 
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     private func makeModel(
         handler: MockRequestHandler,
         recorder: DiagnosticRecorder

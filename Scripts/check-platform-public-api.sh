@@ -47,7 +47,7 @@ if rg -q '@testable|@_spi|^package[[:space:]]+import' "$external_fixture"; then
     exit 1
 fi
 
-for declaration in '.iOS(.v18)' '.macOS(.v15)' '.tvOS(.v18)' '.watchOS(.v11)' '.visionOS(.v2)'; do
+for declaration in '.iOS(.v15)' '.macOS(.v12)' '.tvOS(.v15)' '.watchOS(.v8)' '.visionOS(.v1)'; do
     if ! rg -Fq "$declaration" "$package_path/Package.swift"; then
         echo "Package.swift is missing its required $declaration deployment minimum." >&2
         exit 1
@@ -142,11 +142,11 @@ check_platform() {
     echo "Verified $platform_name ($target) by emitting the SDK module and type-checking tests and an external client in debug and release."
 }
 
-check_platform "iOS and iPadOS" ios iphoneos arm64-apple-ios18.0
+check_platform "iOS and iPadOS" ios iphoneos arm64-apple-ios15.0
 # Xcode stores the iOS SwiftUI macro plug-ins under the device platform.
-check_platform "iOS Simulator" ios-simulator iphonesimulator arm64-apple-ios18.0-simulator iphoneos
-check_platform "macOS" macos macosx arm64-apple-macosx15.0
-check_platform "Mac Catalyst" catalyst macosx arm64-apple-ios18.0-macabi
-check_platform "tvOS" tvos appletvos arm64-apple-tvos18.0
-check_platform "watchOS" watchos watchos arm64_32-apple-watchos11.0
-check_platform "visionOS" visionos xros arm64-apple-xros2.0
+check_platform "iOS Simulator" ios-simulator iphonesimulator arm64-apple-ios15.0-simulator iphoneos
+check_platform "macOS" macos macosx arm64-apple-macosx12.0
+check_platform "Mac Catalyst" catalyst macosx arm64-apple-ios15.0-macabi
+check_platform "tvOS" tvos appletvos arm64-apple-tvos15.0
+check_platform "watchOS" watchos watchos arm64_32-apple-watchos8.0
+check_platform "visionOS" visionos xros arm64-apple-xros1.0

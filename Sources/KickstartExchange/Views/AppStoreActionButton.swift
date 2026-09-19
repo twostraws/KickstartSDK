@@ -8,6 +8,7 @@
 import SwiftUI
 
 /// Displays the action that opens an advertised app in the App Store.
+@available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
 struct AppStoreActionButton: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.exchangeAdActionTextColor) private var textColor

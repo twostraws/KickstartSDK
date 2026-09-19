@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
 extension EnvironmentValues {
     @Entry var exchangeAdCornerStyle = ExchangeAdCornerStyle.rounded
     @Entry var exchangeAdStrokeColor: Color?
@@ -20,6 +21,7 @@ extension EnvironmentValues {
     #endif
 }
 
+@available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
 public extension View {
     /// Sets the corner treatment for Kickstart Exchange advertisement cards
     /// within this view.

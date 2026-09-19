@@ -11,6 +11,7 @@ import Testing
 /// Verifies the SDK privacy manifest declares its exact data practices.
 @Suite("Privacy manifest")
 struct PrivacyManifestTests {
+    @available(iOS 18, macOS 15, tvOS 18, watchOS 11, visionOS 2, *)
     @Test("The manifest declares the exact Exchange data types and purposes")
     func exactDataTypesAndPurposes() throws {
         let packageRoot = URL(filePath: #filePath)

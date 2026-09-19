@@ -9,6 +9,24 @@
             "value" : "About this ad"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À propos de cette annonce"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于此广告"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om den här annonsen"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -29,6 +47,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ad"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annonce"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "广告"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annons"
           }
         },
         "es" : {
@@ -53,6 +89,24 @@
             "value" : "Advertisement: %1$@. %2$@"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annonce : %1$@. %2$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "广告：%1$@。%2$@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annons: %1$@. %2$@"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -73,6 +127,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Advertiser"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annonceur"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "广告主"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annonsör"
           }
         },
         "es" : {
@@ -97,6 +169,24 @@
             "value" : "App Store availability"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disponibilité sur l’App Store"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store 上架情况"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tillgänglighet i App Store"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -117,6 +207,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Broken App Store link"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lien App Store rompu"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store 链接失效"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trasig App Store-länk"
           }
         },
         "es" : {
@@ -141,6 +249,24 @@
             "value" : "Check your connection and try again."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vérifiez votre connexion, puis réessayez."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请检查网络连接后重试。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontrollera din anslutning och försök igen."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -161,6 +287,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Choose Another Reason"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisir un autre motif"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择其他原因"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välj en annan orsak"
           }
         },
         "es" : {
@@ -185,6 +329,24 @@
             "value" : "Choose the reason that best describes the problem."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisissez le motif qui décrit le mieux le problème."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请选择最符合问题情况的原因。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välj den orsak som bäst beskriver problemet."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -205,6 +367,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Done"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完成"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klar"
           }
         },
         "es" : {
@@ -229,6 +409,24 @@
             "value" : "Get"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obtenir"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "获取"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hämta"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -249,6 +447,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Get %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obtenir %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "获取 %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hämta %@"
           }
         },
         "es" : {
@@ -273,6 +489,24 @@
             "value" : "It's inappropriate"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contenu inapproprié"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "内容不当"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den är olämplig"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -293,6 +527,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "It's misleading"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contenu trompeur"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "内容具有误导性"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den är vilseledande"
           }
         },
         "es" : {
@@ -317,6 +569,24 @@
             "value" : "Kickstart Exchange does not track you or your device."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kickstart Exchange ne vous suit pas à la trace, pas plus que votre appareil."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kickstart Exchange 不会跟踪你或你的设备。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kickstart Exchange spårar inte dig eller din enhet."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -337,6 +607,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No report was stored."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun signalement n’a été enregistré."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未保存任何举报记录。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen rapport sparades."
           }
         },
         "es" : {
@@ -361,6 +649,24 @@
             "value" : "Opens the App Store"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvre l’App Store"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开 App Store"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öppnar App Store"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -381,6 +687,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Other"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autre"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "其他"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annat"
           }
         },
         "es" : {
@@ -405,6 +729,24 @@
             "value" : "Privacy"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confidentialité"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隐私"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Integritet"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -425,6 +767,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Report"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signaler"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "举报"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rapportera"
           }
         },
         "es" : {
@@ -449,6 +809,24 @@
             "value" : "Report not sent"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signalement non envoyé"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "举报未发送"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rapporten skickades inte"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -469,6 +847,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Report sent"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signalement envoyé"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "举报已发送"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rapporten har skickats"
           }
         },
         "es" : {
@@ -493,6 +889,24 @@
             "value" : "Report this advertisement"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signaler cette annonce"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "举报此广告"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rapportera den här annonsen"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -513,6 +927,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sending report…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Envoi du signalement…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在发送举报…"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skickar rapport…"
           }
         },
         "es" : {
@@ -537,6 +969,24 @@
             "value" : "Shows information about this advertisement"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Affiche des informations sur cette annonce"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示此广告的相关信息"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visar information om den här annonsen"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -557,6 +1007,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Test advert"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annonce de test"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "测试广告"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testannons"
           }
         },
         "es" : {
@@ -581,6 +1049,24 @@
             "value" : "Test report complete"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signalement de test terminé"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "测试举报已完成"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testrapporten är klar"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -601,6 +1087,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thank you. We'll review it."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Merci. Nous allons l’examiner."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "谢谢，我们会审核此举报。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tack. Vi granskar den."
           }
         },
         "es" : {
@@ -625,6 +1129,24 @@
             "value" : "The app you’re using"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’app que vous utilisez"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你正在使用的 App"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appen du använder"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -645,6 +1167,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "This ad is based on"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cette annonce repose sur"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此广告的展示依据"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den här annonsen baseras på"
           }
         },
         "es" : {
@@ -669,6 +1209,24 @@
             "value" : "This is a test advert, shown because the app is running from Xcode or the Simulator. It proves the Kickstart Exchange integration works, and no advertiser is charged for it. Real adverts appear once the app ships from the App Store."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ceci est une annonce de test, affichée parce que l’app est lancée depuis Xcode ou le simulateur. Elle confirme que l’intégration de Kickstart Exchange fonctionne, et aucun annonceur n’est facturé. Les véritables annonces apparaîtront une fois l’app publiée sur l’App Store."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这是一条测试广告，因为 App 正通过 Xcode 或模拟器运行而显示。这表明 Kickstart Exchange 已成功集成，且不会向任何广告主收费。App 在 App Store 发布后，就会显示正式广告。"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det här är en testannons som visas eftersom appen körs från Xcode eller simulatorn. Den bekräftar att integrationen med Kickstart Exchange fungerar, och ingen annonsör debiteras för den. Riktiga annonser visas när appen har publicerats på App Store."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -691,6 +1249,24 @@
             "value" : "Try Again"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réessayer"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重试"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Försök igen"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -711,6 +1287,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Your device platform"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La plateforme de votre appareil"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的设备平台"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Din enhets plattform"
           }
         },
         "es" : {
