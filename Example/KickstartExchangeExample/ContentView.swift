@@ -7,35 +7,39 @@
 
 import SwiftUI
 
-/// Lists the advertisement placements this example demonstrates.
+/// Presents each advertisement placement the SDK supports.
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
-            List {
-                Section {
-                    NavigationLink("Pinned to the bottom") {
-                        PinnedBannerExample()
-                    }
-
-                    NavigationLink("Inside a scrolling list") {
-                        ScrollingBannerExample()
-                    }
-
-                    NavigationLink("With custom styling") {
-                        StyledBannerExample()
-                    }
-                } header: {
-                    Text("Placements")
-                } footer: {
-                    Text(
-                        """
-                        Every screen uses the "preview" API key, so Debug builds \
-                        and the Simulator show a sample advert that charges nobody.
-                        """
-                    )
+        TabView {
+            Tab("Inline", systemImage: "list.bullet") {
+                NavigationStack {
+                    InlineAdsExample()
                 }
             }
-            .navigationTitle("Kickstart Exchange")
+
+            Tab("Pinned", systemImage: "rectangle.bottomthird.inset.filled") {
+                NavigationStack {
+                    PinnedBannerExample()
+                }
+            }
+
+            Tab("Sheet", systemImage: "rectangle.portrait.bottomhalf.filled") {
+                NavigationStack {
+                    SheetAdExample()
+                }
+            }
+
+            Tab("Full screen", systemImage: "rectangle.portrait.fill") {
+                NavigationStack {
+                    FullScreenCoverAdExample()
+                }
+            }
+
+            Tab("Styling", systemImage: "paintbrush") {
+                NavigationStack {
+                    StyledBannerExample()
+                }
+            }
         }
     }
 }
