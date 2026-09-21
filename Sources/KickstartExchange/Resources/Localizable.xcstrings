@@ -27,6 +27,12 @@
             "value" : "Om den här annonsen"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de este anuncio"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -59,6 +65,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annons"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anuncio"
           }
         },
         "zh-Hant" : {
@@ -95,6 +107,12 @@
             "value" : "Annons: %1$@. %2$@"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anuncio: %1$@. %2$@"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -127,6 +145,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annonsör"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anunciante"
           }
         },
         "zh-Hant" : {
@@ -163,6 +187,12 @@
             "value" : "Tillgänglighet i App Store"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disponibilidad en el App Store"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -195,6 +225,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trasig App Store-länk"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El enlace del App Store no funciona"
           }
         },
         "zh-Hant" : {
@@ -231,6 +267,12 @@
             "value" : "Kontrollera din anslutning och försök igen."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comprueba tu conexión y vuelve a intentarlo."
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -263,6 +305,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Välj en annan orsak"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elegir otro motivo"
           }
         },
         "zh-Hant" : {
@@ -299,6 +347,12 @@
             "value" : "Välj den orsak som bäst beskriver problemet."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elige el motivo que mejor describa el problema."
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -331,6 +385,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klar"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hecho"
           }
         },
         "zh-Hant" : {
@@ -367,6 +427,12 @@
             "value" : "Hämta"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obtener"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -399,6 +465,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hämta %@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obtener %@"
           }
         },
         "zh-Hant" : {
@@ -435,6 +507,12 @@
             "value" : "Den är olämplig"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es inapropiado"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -467,6 +545,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Den är vilseledande"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es engañoso"
           }
         },
         "zh-Hant" : {
@@ -503,6 +587,12 @@
             "value" : "Kickstart Exchange spårar inte dig eller din enhet."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kickstart Exchange no te rastrea ni a ti ni a tu dispositivo."
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -535,6 +625,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingen rapport sparades."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se ha guardado ninguna denuncia."
           }
         },
         "zh-Hant" : {
@@ -571,6 +667,12 @@
             "value" : "Öppnar App Store"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre el App Store"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -603,6 +705,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annat"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otro"
           }
         },
         "zh-Hant" : {
@@ -639,6 +747,12 @@
             "value" : "Integritet"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacidad"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -671,6 +785,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rapportera"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denunciar"
           }
         },
         "zh-Hant" : {
@@ -707,6 +827,12 @@
             "value" : "Rapporten skickades inte"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denuncia no enviada"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -739,6 +865,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rapporten har skickats"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denuncia enviada"
           }
         },
         "zh-Hant" : {
@@ -775,6 +907,12 @@
             "value" : "Rapportera den här annonsen"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denunciar este anuncio"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -807,6 +945,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skickar rapport…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enviando denuncia…"
           }
         },
         "zh-Hant" : {
@@ -843,6 +987,12 @@
             "value" : "Visar information om den här annonsen"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muestra información sobre este anuncio"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -875,6 +1025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Testannons"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anuncio de prueba"
           }
         },
         "zh-Hant" : {
@@ -911,6 +1067,12 @@
             "value" : "Testrapporten är klar"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denuncia de prueba completada"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -943,6 +1105,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tack. Vi granskar den."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gracias. La revisaremos."
           }
         },
         "zh-Hant" : {
@@ -979,6 +1147,12 @@
             "value" : "Appen du använder"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La app que estás usando"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1011,6 +1185,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Den här annonsen baseras på"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este anuncio se basa en"
           }
         },
         "zh-Hant" : {
@@ -1047,6 +1227,12 @@
             "value" : "Det här är en testannons som visas eftersom appen körs från Xcode eller simulatorn. Den bekräftar att integrationen med Kickstart Exchange fungerar, och ingen annonsör debiteras för den. Riktiga annonser visas när appen har publicerats på App Store."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este anuncio de prueba se muestra porque la app se está ejecutando desde Xcode o el Simulador. Demuestra que la integración con Kickstart Exchange funciona y no se cobra a ningún anunciante. Los anuncios reales aparecerán cuando la app se publique en el App Store."
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1081,6 +1267,12 @@
             "value" : "Försök igen"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volver a intentarlo"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1113,6 +1305,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Din enhets plattform"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La plataforma de tu dispositivo"
           }
         },
         "zh-Hant" : {
