@@ -19,6 +19,7 @@ struct ExchangeAdvertisementCard: View {
 
     @Environment(\.exchangeAdCornerStyle) private var cornerStyle
     @Environment(\.exchangeAdStrokeColor) private var strokeColor
+    @Environment(\.exchangeAdBackgroundColor) private var backgroundColor
     @Environment(\.exchangeAdDisclosureBackgroundColor) private var disclosureBackgroundColor
     @Environment(\.colorScheme) private var colorScheme
     @FocusState private var isDisclosureFocused: Bool
@@ -155,7 +156,7 @@ struct ExchangeAdvertisementCard: View {
         #if os(visionOS)
         .glassBackgroundEffect(in: .rect(cornerRadius: cornerStyle.cornerRadius))
         #else
-        .background(.windowBackground, in: .rect(cornerRadius: cornerStyle.cornerRadius))
+        .background(cardBackground, in: .rect(cornerRadius: cornerStyle.cornerRadius))
         #endif
         .overlay {
             if let strokeColor {
@@ -187,6 +188,16 @@ struct ExchangeAdvertisementCard: View {
     private var decorationScale: Double {
         ExchangeAdLayoutMetrics.decorationScale(for: scale)
     }
+
+    #if !os(visionOS)
+    private var cardBackground: AnyShapeStyle {
+        if let backgroundColor {
+            AnyShapeStyle(backgroundColor)
+        } else {
+            AnyShapeStyle(.windowBackground)
+        }
+    }
+    #endif
 
     private var focusedBackgroundColor: Color {
         colorScheme == .dark ? .white : .black
