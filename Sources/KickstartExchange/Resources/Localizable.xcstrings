@@ -3,6 +3,12 @@
   "strings" : {
     "About this ad" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über diese Anzeige"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -43,6 +49,12 @@
     },
     "Ad" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anzeige"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -83,6 +95,12 @@
     },
     "Advertisement: %@. %@" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anzeige: %1$@. %2$@"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "new",
@@ -123,6 +141,12 @@
     },
     "Advertiser" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Werbetreibender"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -163,6 +187,12 @@
     },
     "App Store availability" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verfügbarkeit im App Store"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -203,6 +233,12 @@
     },
     "Broken App Store link" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Defekter App Store-Link"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -243,6 +279,12 @@
     },
     "Check your connection and try again." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prüfe deine Verbindung und versuche es erneut."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -283,6 +325,12 @@
     },
     "Choose Another Reason" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anderen Grund wählen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -323,6 +371,12 @@
     },
     "Choose the reason that best describes the problem." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wähle den Grund, der das Problem am besten beschreibt."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -363,6 +417,12 @@
     },
     "Done" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fertig"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -403,6 +463,12 @@
     },
     "Get" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -443,6 +509,12 @@
     },
     "Get %@" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ laden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -483,6 +555,12 @@
     },
     "It's inappropriate" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sie ist unangemessen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -523,6 +601,12 @@
     },
     "It's misleading" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sie ist irreführend"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -563,6 +647,12 @@
     },
     "Kickstart Exchange does not track you or your device." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kickstart Exchange verfolgt weder dich noch dein Gerät."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -603,6 +693,12 @@
     },
     "No report was stored." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es wurde keine Meldung gespeichert."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -643,6 +739,12 @@
     },
     "Opens the App Store" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnet den App Store"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -683,6 +785,12 @@
     },
     "Other" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonstiges"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -723,6 +831,12 @@
     },
     "Privacy" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datenschutz"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -763,6 +877,12 @@
     },
     "Report" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meldung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -803,6 +923,12 @@
     },
     "Report not sent" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meldung nicht gesendet"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -843,6 +969,12 @@
     },
     "Report sent" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meldung gesendet"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -883,6 +1015,12 @@
     },
     "Report this advertisement" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diese Anzeige melden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -923,6 +1061,12 @@
     },
     "Sending report…" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meldung wird gesendet…"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -963,6 +1107,12 @@
     },
     "Shows information about this advertisement" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeigt Informationen zu dieser Anzeige"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1003,6 +1153,12 @@
     },
     "Test advert" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testanzeige"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1043,6 +1199,12 @@
     },
     "Test report complete" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testmeldung abgeschlossen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1083,6 +1245,12 @@
     },
     "Thank you. We'll review it." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danke. Wir werden die Meldung prüfen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1123,6 +1291,12 @@
     },
     "The app you’re using" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die App, die du nutzt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1163,6 +1337,12 @@
     },
     "This ad is based on" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diese Anzeige basiert auf"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1203,6 +1383,12 @@
     },
     "This is a test advert, shown because the app is running from Xcode or the Simulator. It proves the Kickstart Exchange integration works, and no advertiser is charged for it. Real adverts appear once the app ships from the App Store." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dies ist eine Testanzeige, die erscheint, weil die App über Xcode oder im Simulator ausgeführt wird. Sie zeigt, dass die Integration von Kickstart Exchange funktioniert. Dem Werbetreibenden entstehen dadurch keine Kosten. Echte Anzeigen erscheinen, wenn die App aus dem App Store installiert wurde."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1243,6 +1429,12 @@
     },
     "Try Again" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erneut versuchen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1283,6 +1475,12 @@
     },
     "Your device platform" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Plattform deines Geräts"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
