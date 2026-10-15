@@ -3,6 +3,12 @@
   "strings" : {
     "%lld / %lld" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld / %2$lld"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -43,6 +49,12 @@
     },
     "%lld of %lld characters" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld von %2$lld Zeichen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -83,6 +95,24 @@
     },
     "%lld votes" : {
       "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Stimme"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Stimmen"
+                }
+              }
+            }
+          }
+        },
         "en" : {
           "variations" : {
             "plural" : {
@@ -195,6 +225,12 @@
     },
     "All" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -235,6 +271,12 @@
     },
     "Check the length and contents of your submission." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prüfe Länge und Inhalt deines Textes."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -275,6 +317,12 @@
     },
     "Comments" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kommentare"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -315,6 +363,12 @@
     },
     "Completed" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Umgesetzt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -355,6 +409,12 @@
     },
     "Could not connect. Check your connection and try again." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbindung nicht möglich. Prüfe deine Verbindung und versuche es erneut."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -395,6 +455,12 @@
     },
     "Declined" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abgelehnt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -435,6 +501,12 @@
     },
     "Description" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beschreibung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -475,6 +547,12 @@
     },
     "Developer" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entwickler"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -515,6 +593,12 @@
     },
     "Done" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fertig"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -555,6 +639,12 @@
     },
     "Feature Requests" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feature-Vorschläge"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -595,6 +685,12 @@
     },
     "Feedback could not be loaded. Please try again later." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feedback konnte nicht geladen werden. Bitte versuche es später erneut."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -635,6 +731,12 @@
     },
     "Feedback is not configured correctly. Please contact the app developer." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feedback ist nicht richtig konfiguriert. Bitte wende dich an den Entwickler der App."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -675,6 +777,12 @@
     },
     "Feedback is unavailable right now." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feedback ist derzeit nicht verfügbar."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -715,6 +823,12 @@
     },
     "In Progress" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In Arbeit"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -755,6 +869,12 @@
     },
     "Load more" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mehr laden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -795,6 +915,12 @@
     },
     "Load more comments" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weitere Kommentare laden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -835,6 +961,12 @@
     },
     "Loading…" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wird geladen…"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -875,6 +1007,12 @@
     },
     "Nothing to see here yet." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hier gibt es noch nichts zu sehen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -915,6 +1053,12 @@
     },
     "Open" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Offen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -955,6 +1099,12 @@
     },
     "Planned" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geplant"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -995,6 +1145,12 @@
     },
     "Remove vote" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stimme zurückziehen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1035,6 +1191,12 @@
     },
     "Request" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorschlag"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1075,6 +1237,12 @@
     },
     "Send" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Senden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1115,6 +1283,12 @@
     },
     "Sending comment" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kommentar wird gesendet"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1155,6 +1329,12 @@
     },
     "Show Original" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Original anzeigen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1195,6 +1375,12 @@
     },
     "Some text could not be translated." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein Teil des Textes konnte nicht übersetzt werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1235,6 +1421,12 @@
     },
     "Status" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1275,6 +1467,12 @@
     },
     "Suggest a Feature" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feature vorschlagen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1315,6 +1513,12 @@
     },
     "Thank you! Your comment was sent to the developer for review." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danke! Dein Kommentar wurde zur Prüfung an den Entwickler gesendet."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1355,6 +1559,12 @@
     },
     "Thanks for sharing your suggestion!" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danke für deinen Vorschlag!"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1395,6 +1605,12 @@
     },
     "The feedback service returned an unexpected response." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Feedback-Dienst hat eine unerwartete Antwort geliefert."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1435,6 +1651,12 @@
     },
     "There was a problem verifying the app; please try again later." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die App konnte nicht überprüft werden. Bitte versuche es später erneut."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1475,6 +1697,12 @@
     },
     "This request is no longer available." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dieser Vorschlag ist nicht mehr verfügbar."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1515,6 +1743,12 @@
     },
     "Title" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titel"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1555,6 +1789,12 @@
     },
     "Translate" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Übersetzen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1595,6 +1835,12 @@
     },
     "Translate to %@" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auf %@ übersetzen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1635,6 +1881,12 @@
     },
     "Translating…" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wird übersetzt…"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1675,6 +1927,12 @@
     },
     "Try again" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erneut versuchen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1715,6 +1973,12 @@
     },
     "Unable to update vote" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stimme konnte nicht aktualisiert werden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1755,6 +2019,12 @@
     },
     "Vote for this" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dafür stimmen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1795,6 +2065,12 @@
     },
     "Write your feedback here" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schreib hier dein Feedback"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1835,6 +2111,12 @@
     },
     "You have made several requests recently. Please try again later." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du hast kürzlich mehrere Vorschläge gesendet. Bitte versuche es später erneut."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1875,6 +2157,12 @@
     },
     "Your Comment" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein Kommentar"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
