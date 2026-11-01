@@ -80,12 +80,13 @@ You can preview banner ads in Xcode like this:
 }
 ```
 
-Four modifiers adjust the card's presentation:
+Five modifiers adjust the card's presentation:
 
 ```swift
 ExchangeBannerAdView(apiKey: "ks_live_REPLACE_WITH_API_KEY")
     .exchangeAdCornerStyle(.rounded)
     .exchangeAdStroke(.orange)
+    .exchangeAdBackground(.thickMaterial)
     .exchangeAdActionTextColor(.orange)
     .exchangeAdDisclosureBackgroundColor(.purple)
 ```
@@ -93,6 +94,8 @@ ExchangeBannerAdView(apiKey: "ks_live_REPLACE_WITH_API_KEY")
 - `exchangeAdCornerStyle(_:)`: `.square` or `.rounded`. Both preserve the advertised app
   icon's standard rounding.
 - `exchangeAdStroke(_:)`: sets the card's stroke color. The stroke is always one point wide.
+- `exchangeAdBackground(_:)`: sets the card's background to any `ShapeStyle`, such as a color,
+  material, etc. Defaults to the `.windowBackground` system style. Has no effect on visionOS.
 - `exchangeAdActionTextColor(_:)`: sets the App Store action button's text color.
 - `exchangeAdDisclosureBackgroundColor(_:)`: sets the ad disclosure button's background color.
 
