@@ -11,6 +11,7 @@ import SwiftUI
 extension EnvironmentValues {
     @Entry var exchangeAdCornerStyle = ExchangeAdCornerStyle.rounded
     @Entry var exchangeAdStrokeColor: Color?
+    @Entry var exchangeAdBackgroundStyle: AnyShapeStyle?
     @Entry var exchangeAdDisclosureBackgroundColor = Color.blue
 
     // Blue is a safe default text color everywhere except visionOS.
@@ -33,6 +34,12 @@ public extension View {
     /// within this view.
     func exchangeAdStroke(_ color: Color) -> some View {
         environment(\.exchangeAdStrokeColor, color)
+    }
+
+    /// Sets the background style for Kickstart Exchange advertisement cards
+    /// within this view.
+    func exchangeAdBackground(_ style: some ShapeStyle) -> some View {
+        environment(\.exchangeAdBackgroundStyle, AnyShapeStyle(style))
     }
 
     /// Sets the text color of the App Store action button for Kickstart
